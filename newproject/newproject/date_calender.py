@@ -1,6 +1,9 @@
 import datetime
 from datetime import date
 from datetime import timedelta
+from dateutil.relativedelta import relativedelta
+from config import *
+
 
 #Create Date
 two_hurricanes_date = [date(2016, 10, 7), date(2017,6,21)]
@@ -21,21 +24,21 @@ for hurricane in florida_hurricane_dates:
     # Check if the month is before June (month number 6)
     if hurricane.month <= 6:
         early_hurricanes = early_hurricanes + 1
-print(early_hurricanes)
+#print(early_hurricanes)
 
 d1 = date(2017,11,5)
 d2 = date(2017,12,4)
-print("===")
-print(d1.isoformat())
-print(d1.strftime('%Y-%B-%j'))
+#print("===")
+#print(d1.isoformat())
+#print(d1.strftime('%Y-%B-%j'))
 
 l = [d1,d2]
-print(min(l))
-print(max(l))
-print((d2-d1).days)
+#print(min(l))
+#print(max(l))
+#print((d2-d1).days)
 
 td = timedelta(29)
-print(d1+td)
+#print(d1+td)
 
 # A dictionary to count hurricanes per calendar month
 hurricanes_each_month = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6:0,7: 0, 8:0, 9:0, 10:0, 11:0, 12:0}
@@ -48,3 +51,5 @@ for hurricane in florida_hurricane_dates:
     hurricanes_each_month[month] =+ 1
 
 print(hurricanes_each_month)
+
+
