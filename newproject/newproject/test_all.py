@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 from datetime import date
 from datetime import timedelta
 from dateutil.relativedelta import relativedelta
@@ -43,14 +43,24 @@ def generate_date_range(startdate, enddate, delta):
 
 
     while startdate < enddate:
-        print(startdate)
-        logging_rate = getloggingrate(MODEL,BATTERY_TYPE,startdate)
         logging_start = LOGGING_START_TIME
         logging_end = LOGGING_END_TIME
-        while logging_start <= logging_end:
-            print(logging_start)
-            logging_start += logging_rate
+        logging_rate = getloggingrate(MODEL, BATTERY_TYPE, startdate)
+        newstartdate = datetime(startdate.year,startdate.month,startdate.day,0,0,0)
+        #print(f"dt= {startdate}, logging start :{logging_start}, logging_end:{logging_end}, logging_rate={logging_rate}")
+
+        while logging_start < logging_end:
+            logging_min = 0
+            while logging_min < 60:
+                reading_date = newstartdate + timedelta(hours=logging_start, minutes=logging_min, seconds=0)
+                logging_min += logging_rate
+                print(reading_date.isoformat())
+            logging_start += 1
+
+
+
         startdate += delta
+
 
 
 
