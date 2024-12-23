@@ -12,6 +12,8 @@ seaborn = "^0.13.2"
 numpy = "^2.2.0"
 contextily = "^1.6.2"
 geopandas = "^1.0.1"
+shapely = "^2.0.6"
+mapclassify = "^2.8.1"
 
 
 [build-system]
