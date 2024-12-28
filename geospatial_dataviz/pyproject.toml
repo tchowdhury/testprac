@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "geospatial-dataviz"
+version = "0.1.0"
+description = ""
+authors = ["Tapajoyti Chowdhury <tchowdhury@tnsiit.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+geopandas = "^1.0.1"
+shapely = "^2.0.6"
+folium = "^0.19.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -16,6 +16,9 @@ mpld3 = "^0.5.10"
 contextily = "^1.6.2"
 geopandas = "^1.0.1"
 mapclassify = "^2.8.1"
+rasterio = "^1.4.3"
+rasterstats = "^0.20.0"
+folium = "^0.19.2"
 
 
 [tool.poetry.group.dev.dependencies]
