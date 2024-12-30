@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "plotley-basic"
+version = "0.1.0"
+description = ""
+authors = ["Tapajoyti Chowdhury <tchowdhury@tnsiit.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+plotly = "^5.24.1"
+pandas = "^2.2.3"
+cufflinks = "^0.17.3"
+nbformat = "^5.10.4"
+jupyter = "^1.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
