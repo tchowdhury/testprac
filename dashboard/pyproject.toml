@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dashboard"
+version = "0.1.0"
+description = ""
+authors = ["Tapajoyti Chowdhury <tchowdhury@tnsiit.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+plotly = "^5.24.1"
+dash = "^2.18.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
