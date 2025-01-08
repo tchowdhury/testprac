@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "missing-val-viz"
+version = "0.1.0"
+description = ""
+authors = ["Tapajoyti Chowdhury <tchowdhury@tnsiit.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+missingno = "^0.5.2"
+pandas = "^2.2.3"
+seaborn = "^0.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
