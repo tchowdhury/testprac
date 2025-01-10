@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "bokeh-viz"
+version = "0.1.0"
+description = ""
+authors = ["Tapajoyti Chowdhury <tchowdhury@tnsiit.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+bokeh = "^3.6.2"
+jupyter-bokeh = "^4.0.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
